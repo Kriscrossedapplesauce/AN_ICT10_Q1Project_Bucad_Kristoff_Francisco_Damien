@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Q1 PROJECT</title>
+    <link rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap">
+    
+    <link rel="stylesheet" 
+        href="https://pyscript.net/releases/2025.2.2/core.css">
+
+    <script type="module" 
+        src="https://pyscript.net/releases/2025.2.2/core.js">
+    </script>
+
+    <script type="py" src="main.py"></script>
+
+	<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+
+    .top-bar {
+        background-color: #B38ABE;
+        width: 100vw;
+        min-height: 75px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text {
+        background-color: #fff;
+        color: #000;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+  	body {
+	    font-family: 'Lexend', sans-serif;
+        background-color: rgb(138, 105, 190);
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding:20px;
+  	}
+
+    div {
+        background-color: rgb(255, 255, 255);
+        text-align: left;
+        padding:30px;
+        border-radius: 10px;
+        background-color: #B38ABE;
+        color: rgb(255, 255, 255);
+    }
+    #output {
+        text-align: center;
+    }
+
+    .imgholder {
+        width: 60%; 
+        column-count: 3;
+        column-gap: 16px;
+        padding: 16px; 
+        height: auto;
+        background-color: #B38ABE;
+    }
+    .arteg {
+        display: block;
+        margin-bottom: 16px;
+        border-radius: 8px;
+    }
+
+    input,select,button{
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size:14px;
+        font-family: 'Lexend', sans-serif;
+    }
+    </style>
+</head>
+<body>
+<nav class="top-bar">
+  <div class="text">Commission SKU hi pls commission our arts pleas</div>
+</nav>
+    <div>
+        <h1>john SKU generator 😱😱</h1>
+        <br>
+        <label for="category">🎨 Select a commission category:</label>
+        <select id="category">
+            <option value="uncolored_sketch">Uncolored Sketch</option>
+            <option value="bust_up_artwork">Bust Up Artwork</option>
+            <option value="half_body_artwork">Half Body Artwork</option>
+            <option value="full_body_artwork">Full Body Artwork</option>
+        </select>
+        <label for="style">🖌️ Select a commission style:</label>
+        <select id="style">
+            <option value="chibi">Chibi</option>
+            <option value="semi_realistic">Semi-Realistic</option>
+            <option value="realistic">Realistic</option>
+            <option value="cartoon">Cartoon</option>
+            <option value="pixel_art">Pixel Art</option>
+        </select>
+        <br>
+        <label for="quantity">🖌️ Enter the quantity of commissions:</label>
+        <input type="number" id="quantity" min="1" value="1">
+        <br>
+        <button py-click="generate_sku">🥳🥳Generate SKU🥳🥳</button>
+        <div id="output">
+            Your generated SKU will appear here.
+        </div>
+    </div>
+    <div class="imgholder">
+        <h1>Our samples:</h1>
+        <img class="arteg" src="art1.png" alt="art example" width="100%" height="auto">
+        <img class="arteg" src="art2.png" alt="art example" width="100%" height="auto">
+        <img class="arteg" src="art3.png" alt="art example" width="100%" height="auto">
+        <img class="arteg" src="art4.png" alt="art example" width="100%" height="auto">
+        <img class="arteg" src="art6.png" alt="art example" width="100%" height="auto">
+        <img class="arteg" src="art7.png" alt="art example" width="100%" height="auto">
+        <p>art by Kristoff & Damien</p>
+        <p>Styling and HTML by Kristoff</p>
+        <p>pyscript by Damien</p>
+    </div>
+</body>
+</html>
